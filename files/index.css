@@ -612,6 +612,82 @@ header {
     background: #5e0000;
 }
 
+
+/* FOOTER SECTION */
+.footer {
+    width: 100%;
+    padding: 60px 15px 25px;
+    background: #800000;
+    color: #ffffff;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding-bottom: 30px;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-logo {
+    
+    font-weight: 700;
+}
+
+.footer-logo .GoToday {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Stack Sans Headline", sans-serif;
+    font-size: 50px !important;
+    font-weight: 900;
+}
+
+
+.footer-logo span {
+    color: #f5f5dc;
+}
+
+.footer-box p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #f5f5dc;
+    font-family: "Baloo Bhaijaan 2";
+}
+
+.footer-box h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    font-family: "Stack Sans Headline", sans-serif;
+}
+
+.footer-box a {
+    text-decoration: none;
+    color: #f5f5dc;
+    font-size: 15px;
+    transition: 0.3s;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+.footer-box a:hover {
+    color: #FA7436;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #f5f5dc;
+}
+
 /* TABLET VIEW */
 @media (min-width:768px) {
 
@@ -788,6 +864,23 @@ header {
         padding: 15px 18px;
     }
 
+    /* FOOTER  */
+    .footer {
+        padding: 75px 35px 30px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .footer-box h3 {
+        font-size: 26px;
+    }
+
+    .footer-logo {
+        font-size: 38px;
+    }
 }
 
 /* LAPTOP VIEW*/
@@ -1009,6 +1102,32 @@ header {
     .section-title h2 {
         font-size: 54px;
     }
+
+    /* FOOTER  */
+    .footer {
+        padding: 90px 40px 35px;
+    }
+
+    .footer-container {
+        max-width: 1200px;
+        margin: auto;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 35px;
+    }
+
+    .footer-logo {
+        font-size: 42px;
+    }
+
+    .footer-box h3 {
+        font-size: 28px;
+    }
+
+    .footer-bottom {
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 20px;
+    }
 }
 
 /* LARGE DESKTOP */
@@ -1155,5 +1274,22 @@ header {
 
     .section-title h2 {
         font-size: 62px;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 110px 20px 40px;
+    }
+
+    .footer-container {
+        gap: 45px;
+    }
+
+    .footer-logo {
+        font-size: 46px;
+    }
+
+    .footer-box h3 {
+        font-size: 30px;
     }
 }
