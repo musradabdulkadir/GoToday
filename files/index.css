@@ -422,6 +422,65 @@ header {
     background: #5e0000;
 }
 
+/* TESTIMONIAL SECTION  */
+.testimonials {
+    width: 100%;
+    padding: 60px 15px;
+    background: #f5f5dc;
+}
+
+.testimonials-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+}
+
+.testimonial-card {
+    background: #fffaf0;
+    padding: 28px 22px;
+    border-radius: 26px;
+    text-align: center;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-6px);
+}
+
+.testimonial-card img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 18px;
+    border: 4px solid #800000;
+}
+
+.testimonial-card h3 {
+    font-size: 24px;
+    color: #222222;
+    margin-bottom: 4px;
+    font-family: "Stack Sans Headline", sans-serif;
+}
+
+.testimonial-card span {
+    color: #800000;
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 14px;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+.testimonial-card p {
+    color: #666666;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 16px;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
 /* TABLET VIEW */
 @media (min-width:768px) {
 
@@ -522,6 +581,24 @@ header {
 
     .package-content {
         padding: 24px;
+    }
+
+    .section-title h2 {
+        font-size: 44px;
+    }
+
+    /* TESTIMONIALS SECTION */
+    .testimonials {
+        padding: 75px 35px;
+    }
+
+    .testimonials-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .testimonial-card {
+        padding: 32px 26px;
     }
 
     .section-title h2 {
@@ -669,6 +746,30 @@ header {
     .section-title h2 {
         font-size: 54px;
     }
+
+    /* TESTIMONIALS SECTION */
+    .testimonials {
+        padding: 90px 40px;
+    }
+
+    .testimonials-container {
+        max-width: 1200px;
+        margin: auto;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 26px;
+    }
+
+    .testimonial-card {
+        padding: 35px 28px;
+    }
+
+    .section-title {
+        margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+        font-size: 54px;
+    }
 }
 
 /* LARGE DESKTOP */
@@ -764,6 +865,24 @@ header {
 
     .package-card img {
         height: 240px;
+    }
+
+    .section-title h2 {
+        font-size: 62px;
+    }
+
+    /* TESTIMONIAL SECTION */
+    .testimonials {
+        padding: 110px 20px;
+    }
+
+    .testimonials-container {
+        gap: 30px;
+    }
+
+    .testimonial-card {
+        border-radius: 30px;
+        padding: 40px 30px;
     }
 
     .section-title h2 {
