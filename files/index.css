@@ -194,6 +194,98 @@ header {
     object-fit: cover;
 }
 
+/* POPULAR DESTINATION SECTION */
+.destinations {
+    width: 100%;
+    padding: 60px 15px;
+    background: #f5f5dc;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-tag {
+    color: #800000;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+.section-title h2 {
+    font-size: 34px;
+    color: #222222;
+    font-family: "Stack Sans Headline", sans-serif;
+}
+
+.destination-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+}
+
+.destination-card {
+    background: #fffaf0;
+    border: 4px solid #8000009c;
+    border-radius: 26px;
+    overflow: hidden;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-6px);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.destination-content {
+    padding: 20px;
+}
+
+.destination-content h3 {
+    font-size: 24px;
+    color: #222;
+    margin-bottom: 6px;
+    font-family: "Stack Sans Headline", sans-serif;
+}
+
+.destination-content p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 16px;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+.destination-content p span{
+    color: #ffd700;
+}
+
+.destination-content a {
+    text-decoration: none;
+    display: inline-block;
+    background: #800000;
+    color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.destination-content a:hover {
+    background: #5e0000;
+}
+
+.price{
+
+}
 /* TABLET VIEW */
 @media (min-width:768px) {
 
@@ -236,6 +328,28 @@ header {
 
     .hero-image img {
         max-width: 430px;
+    }
+
+    /* POPULAR DESTINATION SECTION */
+    .destinations {
+        padding: 75px 35px;
+    }
+
+    .section-title h2 {
+        font-size: 44px;
+    }
+
+    .destination-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .destination-card img {
+        height: 240px;
+    }
+
+    .destination-content {
+        padding: 24px;
     }
 
 }
@@ -307,6 +421,30 @@ header {
         max-width: 500px;
         border-radius: 28px;
     }
+
+    /* POPULAR DESTINATION SECTION */
+    .destinations {
+        padding: 90px 40px;
+    }
+
+    .destination-container {
+        max-width: 1200px;
+        margin: auto;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 26px;
+    }
+
+    .section-title {
+        margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+        font-size: 54px;
+    }
+
+    .destination-card img {
+        height: 220px;
+    }
 }
 
 /* LARGE DESKTOP */
@@ -346,5 +484,26 @@ header {
     .hero-image img {
         max-width: 560px;
         border-radius: 30px;
+    }
+
+    /* POPULAR DESTINATION SECTION */
+    .destinations {
+        padding: 110px 20px;
+    }
+
+    .destination-container {
+        gap: 30px;
+    }
+
+    .section-title h2 {
+        font-size: 62px;
+    }
+
+    .destination-card {
+        border-radius: 30px;
+    }
+
+    .destination-card img {
+        height: 240px;
     }
 }
