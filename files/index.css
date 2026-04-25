@@ -337,6 +337,90 @@ header {
     font-family: "Baloo Bhaijaan 2", sans-serif;
 }
 
+/* TRAVEL PACKAGE SECTION */
+.packages {
+    width: 100%;
+    padding: 60px 15px;
+    background: #f5f5dc;
+}
+
+.packages-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+}
+
+.package-card {
+    background: #fffaf0;
+    border-radius: 26px;
+    overflow: hidden;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease;
+}
+
+.package-card:hover {
+    transform: translateY(-6px);
+}
+
+.package-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.package-content {
+    padding: 22px;
+}
+
+.package-content h3 {
+    font-size: 24px;
+    color: #222222;
+    margin-bottom: 8px;
+    font-family: "Stack Sans Headline", sans-serif;
+}
+
+.package-content p {
+    color: #666666;
+    font-size: 15px;
+    margin-bottom: 18px;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+.package-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.package-info span {
+    color: #800000;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.package-info small {
+    color: #222222;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.package-content a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: #800000;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.package-content a:hover {
+    background: #5e0000;
+}
+
 /* TABLET VIEW */
 @media (min-width:768px) {
 
