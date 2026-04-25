@@ -6,12 +6,12 @@
 }
 
 body{
-    background:#f8f8f8;
+    background:#f5f5dc;
 }
 
 /* Navbar */
 header{
-    background:#fff;
+    background:#800000;
     box-shadow:0 2px 10px rgba(0,0,0,0.05);
 }
 
@@ -25,15 +25,19 @@ header{
 }
 
 .logo{
-    font-size:28px;
+    font-size:32px;
     font-weight:bold;
+    
 }
 .logo a{
     text-decoration: none;
+    font-family:"Stack Sans Headline";
+    color: #ffffff;
+    font-weight: 900;
 }
 
 .logo span{
-    color:#FA7436;
+    color: #f5f5dc;
 }
 
 /* Hide checkbox */
@@ -50,7 +54,10 @@ header{
 
 .nav-links a{
     text-decoration:none;
-    color:#333;
+    font-family: "Baloo Bhaijaan 2";
+    font-weight: 600;
+    font-size: 17px;
+    color:#ffffff;
     transition:0.3s;
 }
 
