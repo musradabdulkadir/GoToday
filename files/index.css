@@ -542,6 +542,76 @@ header {
     background: #e66120;
 }
 
+/* CHOOSE LOCATION SECTION */
+.booking {
+    width: 100%;
+    padding: 60px 15px;
+    background: #f5f5dc;
+}
+
+.booking-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.booking-box {
+    background: #fffaf0;
+    padding: 28px 22px;
+    border-radius: 28px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.06);
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.booking-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.booking-item label {
+    color: #800000;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+.booking-item input,
+.booking-item select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background: #ffffff;
+    outline: none;
+    font-size: 15px;
+    color: #222222;
+    appearance: none;
+}
+
+.booking-item input:focus,
+.booking-item select:focus {
+    border-color: #800000;
+}
+
+.booking-btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: #800000;
+    color: #ffffff;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.booking-btn:hover {
+    background: #5e0000;
+}
+
 /* TABLET VIEW */
 @media (min-width:768px) {
 
@@ -697,6 +767,25 @@ header {
 
     .newsletter-form button {
         width: 180px;
+    }
+
+    /* CHOOSE LOCATION SECTION */
+    .booking {
+        padding: 75px 35px;
+    }
+
+    .booking-box {
+        padding: 38px 30px;
+        gap: 20px;
+    }
+
+    .section-title h2 {
+        font-size: 44px;
+    }
+
+    .booking-item input,
+    .booking-item select {
+        padding: 15px 18px;
     }
 
 }
@@ -899,6 +988,27 @@ header {
         max-width: 480px;
         margin: 0;
     }
+
+    /* CHOOSE SECTION */
+    .booking {
+        padding: 90px 40px;
+    }
+
+    .booking-box {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: end;
+        gap: 18px;
+        padding: 42px 35px;
+    }
+
+    .section-title {
+        margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+        font-size: 54px;
+    }
 }
 
 /* LARGE DESKTOP */
@@ -1029,6 +1139,21 @@ header {
     }
 
     .newsletter-content h2 {
+        font-size: 62px;
+    }
+
+    /* CHOOSE SECTION */
+    .booking {
+        padding: 110px 20px;
+    }
+
+    .booking-box {
+        padding: 48px 40px;
+        gap: 22px;
+        border-radius: 32px;
+    }
+
+    .section-title h2 {
         font-size: 62px;
     }
 }
