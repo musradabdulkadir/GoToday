@@ -263,7 +263,7 @@ header {
     font-family: "Baloo Bhaijaan 2", sans-serif;
 }
 
-.destination-content p span{
+.destination-content p span {
     color: #ffd700;
 }
 
@@ -283,9 +283,60 @@ header {
     background: #5e0000;
 }
 
-.price{
-
+/* WHY CHOOSE US SECTION  */
+.features {
+    width: 100%;
+    padding: 60px 15px;
+    background: #f5f5dc;
 }
+
+.features-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+}
+
+.feature-card {
+    background: #fffaf0;
+    padding: 28px 22px;
+    border-radius: 26px;
+    text-align: center;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+}
+
+.feature-icon {
+    width: 65px;
+    height: 65px;
+    margin: auto;
+    margin-bottom: 18px;
+    border-radius: 50%;
+    background: #800000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.feature-card h3 {
+    font-size: 24px;
+    color: #222222;
+    margin-bottom: 12px;
+    font-family: "Stack Sans Headline", sans-serif;
+}
+
+.feature-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666666;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
 /* TABLET VIEW */
 @media (min-width:768px) {
 
@@ -350,6 +401,24 @@ header {
 
     .destination-content {
         padding: 24px;
+    }
+
+    /* WHY US SECTION */
+    .features {
+        padding: 75px 35px;
+    }
+
+    .features-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .feature-card {
+        padding: 32px 26px;
+    }
+
+    .section-title h2 {
+        font-size: 44px;
     }
 
 }
@@ -445,6 +514,30 @@ header {
     .destination-card img {
         height: 220px;
     }
+
+    /* WHY US SECTION */
+    .features {
+        padding: 90px 40px;
+    }
+
+    .features-container {
+        max-width: 1200px;
+        margin: auto;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 26px;
+    }
+
+    .feature-card {
+        padding: 35px 24px;
+    }
+
+    .section-title {
+        margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+        font-size: 54px;
+    }
 }
 
 /* LARGE DESKTOP */
@@ -505,5 +598,23 @@ header {
 
     .destination-card img {
         height: 240px;
+    }
+
+    /* WHY US SECTION */
+    .features {
+        padding: 110px 20px;
+    }
+
+    .features-container {
+        gap: 30px;
+    }
+
+    .feature-card {
+        border-radius: 30px;
+        padding: 38px 28px;
+    }
+
+    .section-title h2 {
+        font-size: 62px;
     }
 }
