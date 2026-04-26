@@ -89,11 +89,49 @@ header {
 }
 
 .nav-links a:hover {
-    color: #FA7436;
+    text-decoration: underline;
+    text-underline-offset: 7px ;
 }
 
 #menu-toggle:checked~.nav-links {
     display: flex;
+}
+
+.btn-signup{
+    padding:10px 25px;
+    color: #800000;
+    background-color:#f5f5dc ;
+    border: none;
+    font-size: 18px;
+    font-family: "Stack Sans Headline";
+    font-weight: 600;
+    border-radius: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.btn-signup:hover{
+    background-color:#f5f5dcb6 ;
+    color: black;
+
+}
+.btn-signin{
+    padding:10px 25px;
+    color: #f5f5dc;
+    background:transparent ;
+    border: 2px solid #f5f5dc;
+    font-size: 18px;
+    font-family: "Stack Sans Headline";
+    font-weight: 600;
+    border-radius: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.btn-signin:hover{
+    background-color:#f5f5dcb6 ;
+    color: black;
+
 }
 
 /* HERO SECTION */
@@ -528,10 +566,11 @@ header {
 
 .newsletter-form button {
     border: none;
-    background: #e679799c;
-    color: #ffffff;
+    background: #f5f5dc;
+    color: black;
     padding: 14px;
     border-radius: 12px;
+    font-family: "Stack Sans Headline";
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
@@ -539,7 +578,9 @@ header {
 }
 
 .newsletter-form button:hover {
-    background: #e66120;
+    background: transparent;
+    color: #f5f5dc;
+    border: 2px solid #f5f5dc;
 }
 
 /* CHOOSE LOCATION SECTION */

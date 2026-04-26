@@ -32,11 +32,14 @@
 
             <!-- Menu -->
             <div class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Destination</a>
-                <a href="#">Tour</a>
-                <a href="#">Blog</a>
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#destination">Destination</a>
+                <a href="#package">Tour</a>
+                <div>
+                    <button class="btn-signup">Sign Up</button>
+                    <button class="btn-signin">Sign In</button>
+                </div>
             </div>
         </nav>
     </header>
@@ -44,7 +47,7 @@
     <!-- Main -->
     <main>
         <!-- HERO SECTION -->
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="hero-container">
                 <!-- Left Side -->
                 <div class="hero-content">
@@ -62,8 +65,8 @@
                     </p>
 
                     <div class="hero-buttons">
-                        <a href="#" class="btn-primary">Get Started</a>
-                        <a href="#" class="btn-secondary">Learn More</a>
+                        <a href="#destination" class="btn-primary">Get Started</a>
+                        <a href="#about" class="btn-secondary">Learn More</a>
                     </div>
                 </div>
 
@@ -75,7 +78,7 @@
         </section>
 
         <!-- POPULAR DESTINATION SECTION -->
-        <section class="destinations">
+        <section class="destinations" id="destination">
             <div class="section-title">
                 <p class="section-tag">Top Places</p>
                 <h2>Popular Destinations</h2>
@@ -119,7 +122,7 @@
         </section>
 
         <!-- WHY US SECTION  -->
-        <section class="features">
+        <section class="features" id="about">
             <div class="section-title">
                 <p class="section-tag">Why Choose Us</p>
                 <h2>Your Trusted Travel Partner</h2>
@@ -156,7 +159,7 @@
         </section>
 
         <!-- TRAVEL PACKAGE SECTION -->
-        <section class="packages">
+        <section class="packages" id="package">
             <div class="section-title">
                 <p class="section-tag">Best Tours</p>
                 <h2>Travel Packages</h2>
@@ -295,7 +298,7 @@
 
                 <form class="newsletter-form">
                     <input type="email" placeholder="Enter your email" required>
-                    <button type="submit">SUBSCRIBE</button>
+                    <button type="submit">Subscribe</button>
                 </form>
             </div>
         </section>
