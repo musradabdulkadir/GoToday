@@ -46,4 +46,8 @@ signinForm.addEventListener("submit", function (e) {
   }
 
   alert("Login Successful");
+
+  localStorage.setItem("loggedIn", "true");
+
+  window.location.href = "landingpage.html";
 });
