@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Sign Up</h2>
+
+        <form id="signupForm">
+
+            <input type="text" id="fullname" placeholder="Full Name">
+            <small class="error" id="nameError"></small>
+
+            <input type="text" id="email" placeholder="Email">
+            <small class="error" id="emailError"></small>
+
+            <input type="text" id="phone" placeholder="Phone Number">
+            <small class="error" id="phoneError"></small>
+
+            <input type="text" id="city" placeholder="Location / City">
+            <small class="error" id="cityError"></small>
+
+            <input type="password" id="password" placeholder="Password">
+            <small class="error" id="passwordError"></small>
+
+            <input type="password" id="confirmPassword" placeholder="Confirm Password">
+            <small class="error" id="confirmError"></small>
+
+            <button type="submit">Sign Up</button>
+
+        </form>
+
+        <p>
+            Already have an account?
+            <a href="signin.html">Sign In</a>
+        </p>
+
+    </div>
+
+    <script src="/scripts/signup.js"></script>
+</body>
+
+</html>
